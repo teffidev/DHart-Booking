@@ -180,6 +180,7 @@ https://metroretro.io/board/LB62EG4L52FF
 * **Sprint 4**:
 https://metroretro.io/board/LBQEIS7QA69O
 
+---
 
 **DEMO**
 https://docs.google.com/presentation/d/1Q4gaJACQ17cbHXUr9D0dsFhd2-C4B76Di5Uc0LQPWTg/edit?usp=sharing
