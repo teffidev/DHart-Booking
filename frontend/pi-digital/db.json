@@ -1,0 +1,192 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "categoria": "Pintura",
+      "nombre": "Los humanos",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "los-humanos-by-rune-axisa",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684074238/humanos_bfpjpw.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684075164/humanos1_reeo92.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684075244/humanos2_cg7w7g.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684075244/humanos3_n7tqan.webp"
+      }
+    },
+
+    {
+      "id": 2,
+
+      "categoria": "Pintura",
+      "nombre": "BLUE TIT BUBBLY",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "blue-tit-bubbly-by-kelly-anne-davitt",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684077505/blue_ibqrgq.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684077505/blue1_rj1zke.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684077505/blue2_mcuz8z.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684077505/blue3_lplnh6.webp"
+      }
+    },
+
+    {
+      "id": 3,
+
+      "categoria": "Pintura",
+      "nombre": "CONSENTRICS 2",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "consentrics-2-by-freya-purdue",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078419/consentrics_p3rkyn.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078418/consentrics1_rknlqz.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078418/consentrics2_t3jyhx.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078418/consentrics3_piu58f.webp"
+      }
+    },
+
+    {
+      "id": 4,
+
+      "categoria": "Pintura",
+      "nombre": "KEEP ME IN A DREAM",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "keep-me-in-a-dream-by-paula-macarthur",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078197/keepmeina_dream_gqqp1u.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078197/keepmeina_dream1_mseh4t.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078197/keepmeina_dream2_uedqvq.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078197/keepmeina_dream_gqqp1u.webp"
+      }
+    },
+
+    {
+      "id": 5,
+
+      "categoria": "Escultura",
+      "nombre": "ANATOMICAL STUDY OF THE HORSEs",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "anatomical-study-of-the-horse-by-barry-davies-1",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078843/anatomical_armlzv.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078843/anatomical1_pkgnuv.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078843/anatomical2_olembb.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684078843/anatomical3_pnob1i.webp"
+      }
+    },
+
+    {
+      "id": 6,
+
+      "categoria": "Escultura",
+      "nombre": "ASCENDING THE DEITY (LORD KRISHNA PLAYING THE FLUTE)",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "ascending-the-deity-lord-krishna-playing-the-flute-by-pak-keung-wan",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079051/ascending_ufb27s.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079051/ascending1_tdagsz.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079051/ascending2_hexjco.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079051/ascending3_nwyvo1.webp"
+      }
+    },
+
+    {
+      "id": 7,
+
+      "categoria": "Escultura",
+      "nombre": "KALK BAY",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "kalk-bay-by-gareth-griffiths",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079214/kalk_agdcpp.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079214/kalk1_gaa3r1.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079214/kalk2_qdidce.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079214/kalk_agdcpp.webp"
+      }
+    },
+
+    {
+      "id": 8,
+
+      "categoria": "Escultura",
+      "nombre": "SCREAMING LOVE",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis.  ",
+      "precio": 59990,
+      "url": "screaming-love-by-olga-lomaka",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079359/screaming_kchndy.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079359/screaming1_j6tjoo.webp",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079359/screaming2_yval0l.webp",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079359/screaming_kchndy.webp"
+      }
+    },
+
+    {
+      "id": 9,
+
+      "categoria": "Fotografia",
+      "nombre": "BUGATTI",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "bugatti-by-jenny-boot",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079623/bugatti_jahkg5.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079623/bugatti1_lzhwvp.jpg",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079623/bugatti2_hwmn5d.jpg",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079623/bugatti_jahkg5.webp"
+      }
+    },
+
+    {
+      "id": 10,
+      "categoria": "Fotografia",
+      "nombre": "TUMBLR - FROM SURFACE TENSION SERIES",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "tumblr-from-surface-tension-series-by-tabitha-soren",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079889/tumblr_ysvbsj.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079889/tumblr1_irhddj.jpg",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079889/tumblr2_pxbhim.jpg",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684079888/tumblr3_mragzm.jpg"
+      }
+    },
+
+    {
+      "id": 11,
+      "categoria": "Fotografia",
+      "nombre": "ORIGIN",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "origin-by-jenny-boot",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080091/origin_zbe7ye.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080091/origin1_fc4rey.jpg",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080090/origin2_dlxldf.jpg",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080091/origin3_hssrmw.jpg"
+      }
+    },
+
+    {
+      "id": 12,
+
+      "categoria": "Fotografia",
+      "nombre": "HER MAJESTY, QUEEN ELIZABETH IIs",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet lectus diam, ac vestibulum libero semper quis. ",
+      "precio": 59990,
+      "url": "her-majesty-queen-elizabeth-ii-by-peter-horvath",
+      "images": {
+        "mainUrl": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080291/majestry_nuedbu.webp",
+        "url1": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080291/majestry1_dhzq4p.jpg",
+        "url2": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080291/majestry2_m5jyvt.jpg",
+        "url3": "https://res.cloudinary.com/dnzsvqvfy/image/upload/v1684080291/majestry3_fb2k3n.webp"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+@media (min-width: 1024px) {
+  .containerL {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerD {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .figureD {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .articleT {
+    height: 16rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+}

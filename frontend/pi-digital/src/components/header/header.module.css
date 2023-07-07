@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+  }
+  .asideDisplayT {
+    display: none;
+  }
+  .hiMenu {
+    display: none;
+  }
+  div .containerDivButton {
+    display: grid;
+  }
+}
+
+@media (min-width: 1280px) {
+  .spanText {
+    display: flex;
+  }
+  .asideDisplay {
+    display: none;
+  }
+  .buttonHW {
+    height: 2.25rem;
+    width: 10rem;
+  }
+
+  .toast-custom-style {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .toast-custom-body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .toast-custom-progress {
+    background-color: #fff;
+  }
+}

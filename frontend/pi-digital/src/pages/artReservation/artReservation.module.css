@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+.buttonStyle {
+  background-color: "red";
+  color: "white";
+  border-color: "red";
+}
+
+@media (min-width: 640px) {
+  .articleT {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
+  .divT {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .articleD {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+  .h2D {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .divD {
+    padding-left: 8.5rem /* 40px */;
+    padding-right: 8.5rem;
+  }
+  .heart {
+    font-size: 1.875rem;
+    line-height: 10.25rem;
+  }
+  .articliImgD {
+    display: grid;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+
+  .toast-custom-style {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .toast-custom-body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .toast-custom-progress {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,1289 @@
+{
+	"info": {
+		"_postman_id": "1c565a12-e47d-47de-bd0a-3b2a61ac794e",
+		"name": "Dhart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21825136"
+	},
+	"item": [
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Listar productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar productos aleatoriamente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products/productRandom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"productRandom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar productos por categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products/byCategory/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"byCategory",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar producto por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products/160",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar producto por titulo o autor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products/byTitleOrAuthor/ORB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"byTitleOrAuthor",
+								"ORB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear producto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Prueba luis token 4\",\r\n    \"description\": \"volqueta grande\",\r\n    \"location\": \"casa\",\r\n    \"author\": \"Lina\",\r\n    \"technique\": \"punteo\",\r\n    \"year\": 2018,\r\n    \"priceHour\": 200000.0,\r\n    \"available\": true,\r\n    \"features\": [\r\n        {\r\n                \"id\": 8,\r\n                \"icon\": \"image\", \r\n                \"name\": \"Uso exterior\",\r\n                \"state\": true\r\n        }\r\n    ],\r\n    \"urlList\": [\r\n        \"https://dhart-loadimages.s3.amazonaws.com/3a7955ca-9147-4792-b2f4-d67e388012c7.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/3e0cc290-bc3c-49a0-9070-6dfecc5c6be6.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/0499d2a3-a38c-413f-9e9f-f98d3d14ed46.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/f5c97a4b-ea29-42e1-9a01-4c1b48d88021.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/562973b7-2ead-40d0-a480-867ead1fced2.jpg\"\r\n    ],\r\n    \"idCategory\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"title\": \"Prueba modificar producto22\",\r\n        \"description\": \"Pintura expresionista abstracta, original y firmada. \",\r\n        \"location\": \"UK\",\r\n        \"author\": \"Amanda Blunden\",\r\n        \"technique\": \"Acrílico sobre lienzo\",\r\n        \"year\": 2023,\r\n        \"priceHour\": 650000.0,\r\n        \"available\": true,\r\n        \"imagePath\": \"https://dhart-loadimages.s3.amazonaws.com/3a7955ca-9147-4792-b2f4-d67e388012c7.jpg\",\r\n        \"imageUrl\": \"https://dhart-loadimages.s3.amazonaws.com/3a7955ca-9147-4792-b2f4-d67e388012c7.jpg\",\r\n        \"idCategory\": 1,\r\n        \"features\": [\r\n            {\r\n                \"id\": 8,\r\n                \"icon\": \"image\", \r\n                \"name\": \"Uso exterior\",\r\n                \"state\": true\r\n            }\r\n        ],\r\n        \"urlList\": [\r\n            \"https://dhart-loadimages.s3.amazonaws.com/3a7955ca-9147-4792-b2f4-d67e388012c7.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/3e0cc290-bc3c-49a0-9070-6dfecc5c6be6.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/0499d2a3-a38c-413f-9e9f-f98d3d14ed46.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/f5c97a4b-ea29-42e1-9a01-4c1b48d88021.jpg\",\r\n            \"https://dhart-loadimages.s3.amazonaws.com/562973b7-2ead-40d0-a480-867ead1fced2.jpg\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/products/192",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"192"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/products/195",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"195"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Características",
+			"item": [
+				{
+					"name": "Crear característica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/features",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar características",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/features",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar característica por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/features/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"features",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar característica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/features/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"features",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Imagen",
+			"item": [
+				{
+					"name": "Subir imagen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/lucam/Desktop/ARCHIVOS VARIOS/310372189_470234915132497_4397031915825226854_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/assets/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"assets",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subir imágenes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/lucam/Desktop/ARCHIVOS VARIOS/310372189_470234915132497_4397031915825226854_n.jpg"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/lucam/Desktop/ARCHIVOS VARIOS/310372189_470234915132497_4397031915825226854_n.jpg"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/lucam/Desktop/ARCHIVOS VARIOS/310372189_470234915132497_4397031915825226854_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/assets/uploadFiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"assets",
+								"uploadFiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar imagen por clave",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/assets/get-object?key=658b201d-03f7-4da2-9aff-b3eaaeb05203.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"assets",
+								"get-object"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "658b201d-03f7-4da2-9aff-b3eaaeb05203.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar imagen por clave",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "key",
+								"value": "41c4d209-ee9e-4324-9a6b-130c23763020.jpg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/assets/delete-object?key=41c4d209-ee9e-4324-9a6b-130c23763020.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"assets",
+								"delete-object"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "41c4d209-ee9e-4324-9a6b-130c23763020.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Scores",
+			"item": [
+				{
+					"name": "Crear Puntuacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"score\": 4,\r\n    \"productId\": 1,\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/scores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"scores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar puntuacion promedio por producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/scores/average/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"scores",
+								"average",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar puntuacion de un producto dado por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/scores/product/1/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"scores",
+								"product",
+								"1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener puntuación por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/scores/scores/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"scores",
+								"scores",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar puntuacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/scores/scores/3/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"scores",
+								"scores",
+								"3",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Registrar usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"alejandra@hotmail.com\",\r\n    \"password\":\"Imagine123*\",\r\n    \"firstName\": \"Majo\",\r\n    \"lastName\":\"tashko\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Administrador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"luis@hotmail.com\",\r\n    \"password\":\"Imagine123*\",\r\n    \"firstName\": \"mora\",\r\n    \"lastName\":\"luis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/registerAdm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"registerAdm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbmlzdHJhZG9yQGRoYXJ0LmNvbSIsImlhdCI6MTY4NTY2MzY5NCwiZXhwIjoxNjg1NjYzOTk0fQ.4wcZTpDk8bwiJornOeBfCfuZzTWhNyQxjVxyF9uJkNJEy8fSEpz7KvESUKIjWiX00u97dyzsGgCUX5xScTKQhg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"luis@hotmail.com\",\r\n    \"password\":\"Imagine123*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar usuarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/auth/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"roleName\": \"SUPER_ADMIN3\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validar token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbmlzdHJhZG9yQGRoYXJ0LmNvbSIsImlhdCI6MTY4NTY2MzY5NCwiZXhwIjoxNjg1NjYzOTk0fQ.4wcZTpDk8bwiJornOeBfCfuZzTWhNyQxjVxyF9uJkNJEy8fSEpz7KvESUKIjWiX00u97dyzsGgCUX5xScTKQhg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/auth/validateToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"validateToken"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar rol de usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\": \"ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/users/42/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"users",
+								"42",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar usuarios por email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/email/luis@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"email",
+								"luis@hotmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validar correo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/auth/confirm-account?token=517529a1-d613-4fdf-9e5b-b45dd74a209e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"confirm-account"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "517529a1-d613-4fdf-9e5b-b45dd74a209e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/auth/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoría",
+			"item": [
+				{
+					"name": "Listar categorías",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/categories/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Esculturas\",\r\n    \"description\": \"Explora piezas emblemáticas dentro de un repertorio de tendencias, técnicas, materiales, expresiones artísticas. Descubre en ellas la visión del artista sobre la realidad, la sociedad, la cultura. Dale vida a tus espacio con obras tridimensionales sofisticadas y únicas\",\r\n    \"imagePath\": \"path2\",\r\n    \"imageUrl\": \"https://dhart-images.s3.us-east-2.amazonaws.com/TinyRiderIII-HollyBennett/tinyRiderIII1.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/categories/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Escultura\",\r\n    \"description\": \"Explora piezas emblemáticas dentro de un repertorio de tendencias, técnicas, materiales, expresiones artísticas. Descubre en ellas la visión del artista sobre la realidad, la sociedad, la cultura. Dale vida a tus espacio con obras tridimensionales sofisticadas y únicas\",\r\n    \"imagePath\": \"path2\",\r\n    \"imageUrl\": \"https://dhart-images.s3.us-east-2.amazonaws.com/TinyRiderIII-HollyBennett/tinyRiderIII1.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar categoría por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/categories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar categoria por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/categories/byName/pin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"categories",
+								"byName",
+								"pin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservas",
+			"item": [
+				{
+					"name": "Crear reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateStart\":\"2023-06-27\" ,\r\n    \"dateEnd\":\"2023-07-07\",\r\n    \"totalPrice\":\"16500000\",\r\n    \"confirmed\":\"true\",\r\n    \"productId\": 206,\r\n    \"usuarioId\": 104,\r\n    \"paymentMethodId\": 1\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar fechas NO disponibles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/unavailable-dates/205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"unavailable-dates",
+								"205"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todas las reservas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todas las reservas por producto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/product/205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"product",
+								"205"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todas las reservas por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/user/104",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"user",
+								"104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar reserva",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateStart\":\"2023-08-03\" ,\r\n    \"dateEnd\":\"2023-08-30\",\r\n    \"totalPrice\":\"16400000\",\r\n    \"confirmed\":\"true\",\r\n    \"productId\": 205,\r\n    \"usuarioId\": 104  \r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar reserva",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"23"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Método de pago",
+			"item": [
+				{
+					"name": "Crear método de pago",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Tarjeta de crédito\"\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/method-of-payments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"method-of-payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar métodos de pago",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Listar métodos de pago Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/method-of-payments/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"method-of-payments",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

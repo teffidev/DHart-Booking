@@ -1,0 +1,30 @@
+@media (min-width: 640px) {
+  .h2T {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 16px;
+  }
+  .divformT {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .labelT {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .inputButtonT {
+    width: 50%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .toast-custom-style {
+    background-color: #333;
+    color: #fff;
+  }
+  .toast-custom-body {
+    font-family: Arial, sans-serif;
+  }
+  .toast-custom-progress {
+    background-color: #fff;
+  }
+}

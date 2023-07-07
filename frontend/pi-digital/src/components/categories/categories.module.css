@@ -1,0 +1,17 @@
+@media (min-width: 640px) {
+  .containerT {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerD {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerL {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
